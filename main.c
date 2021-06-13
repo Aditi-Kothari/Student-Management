@@ -150,8 +150,10 @@ void display()
     while(fread(&s,sizeof(s),1,fp)==1)
     {
    printf("\nName of Student: %s",s.name);
+   printf("\nFather's Name of Student: %s",s.fname);
    printf("\nSurname of student: %s",s.surname);
    printf("\nRoll Number: %d",s.roll_no);
+   printf("\nAddress of Student: %s",s.address);
    printf("\nMarks: %d",s.marks);
    printf("\nGrade: %f",s.grade);
    printf("\n\n");
@@ -272,12 +274,7 @@ void deleterecord(){
                 fwrite(&s,sizeof(s),1,ft);
             }
             else
-
-
-
-
-
-                flag=1;
+             flag=1;
         }
         if(flag==0)
         {
